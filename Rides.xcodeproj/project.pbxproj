@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		F19C2ACF2CB41BE20076B361 /* RidesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2ACE2CB41BE20076B361 /* RidesApp.swift */; };
-		F19C2AD12CB41BE20076B361 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AD02CB41BE20076B361 /* ContentView.swift */; };
 		F19C2AD32CB41BE20076B361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19C2AD22CB41BE20076B361 /* Assets.xcassets */; };
 		F19C2AD62CB41BE20076B361 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19C2AD52CB41BE20076B361 /* Preview Assets.xcassets */; };
+		F19C2ADE2CB41BE20076B361 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2ADD2CB41BE20076B361 /* APIService.swift */; };
+		F19C2AE12CB41BE20076B361 /* Vehicle+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE02CB41BE20076B361 /* Vehicle+Mock.swift */; };
+		F19C2AE32CB41BE20076B361 /* VehicleSortOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE22CB41BE20076B361 /* VehicleSortOption.swift */; };
+		F19C2AE52CB41BE20076B361 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE42CB41BE20076B361 /* Vehicle.swift */; };
+		F19C2AE92CB41BE20076B361 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE82CB41BE20076B361 /* VehicleListViewModel.swift */; };
+		F19C2AF12CB41BE20076B361 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF02CB41BE20076B361 /* InfoRowView.swift */; };
+		F19C2AF32CB41BE20076B361 /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF22CB41BE20076B361 /* VehicleDetailView.swift */; };
+		F19C2AF62CB41BE20076B361 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF52CB41BE20076B361 /* ListRowView.swift */; };
+		F19C2AF82CB41BE20076B361 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF72CB41BE20076B361 /* PlaceholderView.swift */; };
+		F19C2AFA2CB41BE20076B361 /* VehicleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF92CB41BE20076B361 /* VehicleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F19C2ACB2CB41BE20076B361 /* Rides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19C2ACE2CB41BE20076B361 /* RidesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesApp.swift; sourceTree = "<group>"; };
-		F19C2AD02CB41BE20076B361 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F19C2AD22CB41BE20076B361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19C2AD52CB41BE20076B361 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F19C2ADD2CB41BE20076B361 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F19C2AE02CB41BE20076B361 /* Vehicle+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Mock.swift"; sourceTree = "<group>"; };
+		F19C2AE22CB41BE20076B361 /* VehicleSortOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSortOption.swift; sourceTree = "<group>"; };
+		F19C2AE42CB41BE20076B361 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		F19C2AE82CB41BE20076B361 /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		F19C2AF02CB41BE20076B361 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
+		F19C2AF22CB41BE20076B361 /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
+		F19C2AF52CB41BE20076B361 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		F19C2AF72CB41BE20076B361 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		F19C2AF92CB41BE20076B361 /* VehicleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,10 @@
 		F19C2ACD2CB41BE20076B361 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
-				F19C2ACE2CB41BE20076B361 /* RidesApp.swift */,
-				F19C2AD02CB41BE20076B361 /* ContentView.swift */,
+				F19C2AEA2CB41BE20076B361 /* View */,
+				F19C2AE62CB41BE20076B361 /* ViewModel */,
+				F19C2ADF2CB41BE20076B361 /* Model */,
+				F19C2ADC2CB41BE20076B361 /* Services */,
 				F19C2AD22CB41BE20076B361 /* Assets.xcassets */,
 				F19C2AD42CB41BE20076B361 /* Preview Content */,
 			);
@@ -65,6 +85,101 @@
 				F19C2AD52CB41BE20076B361 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F19C2ADC2CB41BE20076B361 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2ADD2CB41BE20076B361 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F19C2ADF2CB41BE20076B361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AE02CB41BE20076B361 /* Vehicle+Mock.swift */,
+				F19C2AE22CB41BE20076B361 /* VehicleSortOption.swift */,
+				F19C2AE42CB41BE20076B361 /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F19C2AE62CB41BE20076B361 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AE72CB41BE20076B361 /* VehecleFeatureViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F19C2AE72CB41BE20076B361 /* VehecleFeatureViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AE82CB41BE20076B361 /* VehicleListViewModel.swift */,
+			);
+			path = VehecleFeatureViewModel;
+			sourceTree = "<group>";
+		};
+		F19C2AEA2CB41BE20076B361 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AEC2CB41BE20076B361 /* Root */,
+				F19C2AEB2CB41BE20076B361 /* VehecleFeature */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F19C2AEB2CB41BE20076B361 /* VehecleFeature */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AEE2CB41BE20076B361 /* VehicleList */,
+				F19C2AED2CB41BE20076B361 /* VehicleDetails */,
+			);
+			path = VehecleFeature;
+			sourceTree = "<group>";
+		};
+		F19C2AEC2CB41BE20076B361 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2ACE2CB41BE20076B361 /* RidesApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F19C2AED2CB41BE20076B361 /* VehicleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AEF2CB41BE20076B361 /* Components */,
+				F19C2AF22CB41BE20076B361 /* VehicleDetailView.swift */,
+			);
+			path = VehicleDetails;
+			sourceTree = "<group>";
+		};
+		F19C2AEE2CB41BE20076B361 /* VehicleList */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AF42CB41BE20076B361 /* Components */,
+				F19C2AF92CB41BE20076B361 /* VehicleListView.swift */,
+			);
+			path = VehicleList;
+			sourceTree = "<group>";
+		};
+		F19C2AEF2CB41BE20076B361 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AF02CB41BE20076B361 /* InfoRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F19C2AF42CB41BE20076B361 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AF52CB41BE20076B361 /* ListRowView.swift */,
+				F19C2AF72CB41BE20076B361 /* PlaceholderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +252,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19C2AD12CB41BE20076B361 /* ContentView.swift in Sources */,
+				F19C2AF32CB41BE20076B361 /* VehicleDetailView.swift in Sources */,
+				F19C2AE52CB41BE20076B361 /* Vehicle.swift in Sources */,
+				F19C2AFA2CB41BE20076B361 /* VehicleListView.swift in Sources */,
+				F19C2AF12CB41BE20076B361 /* InfoRowView.swift in Sources */,
+				F19C2ADE2CB41BE20076B361 /* APIService.swift in Sources */,
+				F19C2AE32CB41BE20076B361 /* VehicleSortOption.swift in Sources */,
+				F19C2AE92CB41BE20076B361 /* VehicleListViewModel.swift in Sources */,
+				F19C2AE12CB41BE20076B361 /* Vehicle+Mock.swift in Sources */,
 				F19C2ACF2CB41BE20076B361 /* RidesApp.swift in Sources */,
+				F19C2AF82CB41BE20076B361 /* PlaceholderView.swift in Sources */,
+				F19C2AF62CB41BE20076B361 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
