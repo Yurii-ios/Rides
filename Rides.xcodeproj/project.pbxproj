@@ -8,21 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		F19C2ACF2CB41BE20076B361 /* RidesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2ACE2CB41BE20076B361 /* RidesApp.swift */; };
-		F19C2AD12CB41BE20076B361 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AD02CB41BE20076B361 /* ContentView.swift */; };
 		F19C2AD32CB41BE20076B361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19C2AD22CB41BE20076B361 /* Assets.xcassets */; };
 		F19C2AD62CB41BE20076B361 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19C2AD52CB41BE20076B361 /* Preview Assets.xcassets */; };
+		F19C2ADE2CB41BE20076B361 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2ADD2CB41BE20076B361 /* APIService.swift */; };
+		F19C2AE12CB41BE20076B361 /* Vehicle+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE02CB41BE20076B361 /* Vehicle+Mock.swift */; };
+		F19C2AE32CB41BE20076B361 /* VehicleSortOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE22CB41BE20076B361 /* VehicleSortOption.swift */; };
+		F19C2AE52CB41BE20076B361 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE42CB41BE20076B361 /* Vehicle.swift */; };
+		F19C2AE92CB41BE20076B361 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AE82CB41BE20076B361 /* VehicleListViewModel.swift */; };
+		F19C2AF12CB41BE20076B361 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF02CB41BE20076B361 /* InfoRowView.swift */; };
+		F19C2AF32CB41BE20076B361 /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF22CB41BE20076B361 /* VehicleDetailView.swift */; };
+		F19C2AF62CB41BE20076B361 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF52CB41BE20076B361 /* ListRowView.swift */; };
+		F19C2AF82CB41BE20076B361 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF72CB41BE20076B361 /* PlaceholderView.swift */; };
+		F19C2AFA2CB41BE20076B361 /* VehicleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AF92CB41BE20076B361 /* VehicleListView.swift */; };
+		F19C2AFC2CB41BE20076B361 /* ValidatedTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AFB2CB41BE20076B361 /* ValidatedTextFieldView.swift */; };
+		F19C2B002CB41BE20076B361 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2AFF2CB41BE20076B361 /* View+Ext.swift */; };
+		F19C2B022CB41BE20076B361 /* VehicleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2B012CB41BE20076B361 /* VehicleDetailViewModel.swift */; };
+		F19C2B0A2CB41BE20076B361 /* VehicleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C2B092CB41BE20076B361 /* VehicleViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F19C2B0B2CB41BE20076B361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19C2AC32CB41BE20076B361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19C2ACA2CB41BE20076B361;
+			remoteInfo = Rides;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F19C2ACB2CB41BE20076B361 /* Rides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19C2ACE2CB41BE20076B361 /* RidesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesApp.swift; sourceTree = "<group>"; };
-		F19C2AD02CB41BE20076B361 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F19C2AD22CB41BE20076B361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19C2AD52CB41BE20076B361 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F19C2ADD2CB41BE20076B361 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F19C2AE02CB41BE20076B361 /* Vehicle+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Mock.swift"; sourceTree = "<group>"; };
+		F19C2AE22CB41BE20076B361 /* VehicleSortOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSortOption.swift; sourceTree = "<group>"; };
+		F19C2AE42CB41BE20076B361 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		F19C2AE82CB41BE20076B361 /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		F19C2AF02CB41BE20076B361 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
+		F19C2AF22CB41BE20076B361 /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
+		F19C2AF52CB41BE20076B361 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		F19C2AF72CB41BE20076B361 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		F19C2AF92CB41BE20076B361 /* VehicleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListView.swift; sourceTree = "<group>"; };
+		F19C2AFB2CB41BE20076B361 /* ValidatedTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedTextFieldView.swift; sourceTree = "<group>"; };
+		F19C2AFF2CB41BE20076B361 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		F19C2B012CB41BE20076B361 /* VehicleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewModel.swift; sourceTree = "<group>"; };
+		F19C2B072CB41BE20076B361 /* RidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19C2B092CB41BE20076B361 /* VehicleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F19C2AC82CB41BE20076B361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19C2B042CB41BE20076B361 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				F19C2ACD2CB41BE20076B361 /* Rides */,
+				F19C2B082CB41BE20076B361 /* RidesTests */,
 				F19C2ACC2CB41BE20076B361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F19C2ACB2CB41BE20076B361 /* Rides.app */,
+				F19C2B072CB41BE20076B361 /* RidesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +97,11 @@
 		F19C2ACD2CB41BE20076B361 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
-				F19C2ACE2CB41BE20076B361 /* RidesApp.swift */,
-				F19C2AD02CB41BE20076B361 /* ContentView.swift */,
+				F19C2AEA2CB41BE20076B361 /* View */,
+				F19C2AE62CB41BE20076B361 /* ViewModel */,
+				F19C2ADF2CB41BE20076B361 /* Model */,
+				F19C2ADC2CB41BE20076B361 /* Services */,
+				F19C2AFD2CB41BE20076B361 /* Common */,
 				F19C2AD22CB41BE20076B361 /* Assets.xcassets */,
 				F19C2AD42CB41BE20076B361 /* Preview Content */,
 			);
@@ -65,6 +114,135 @@
 				F19C2AD52CB41BE20076B361 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F19C2ADC2CB41BE20076B361 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2ADD2CB41BE20076B361 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F19C2ADF2CB41BE20076B361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AE02CB41BE20076B361 /* Vehicle+Mock.swift */,
+				F19C2AE22CB41BE20076B361 /* VehicleSortOption.swift */,
+				F19C2AE42CB41BE20076B361 /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F19C2AE62CB41BE20076B361 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AE72CB41BE20076B361 /* VehecleFeatureViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F19C2AE72CB41BE20076B361 /* VehecleFeatureViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AE82CB41BE20076B361 /* VehicleListViewModel.swift */,
+				F19C2B012CB41BE20076B361 /* VehicleDetailViewModel.swift */,
+			);
+			path = VehecleFeatureViewModel;
+			sourceTree = "<group>";
+		};
+		F19C2AEA2CB41BE20076B361 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AEC2CB41BE20076B361 /* Root */,
+				F19C2AEB2CB41BE20076B361 /* VehecleFeature */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F19C2AEB2CB41BE20076B361 /* VehecleFeature */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AEE2CB41BE20076B361 /* VehicleList */,
+				F19C2AED2CB41BE20076B361 /* VehicleDetails */,
+			);
+			path = VehecleFeature;
+			sourceTree = "<group>";
+		};
+		F19C2AEC2CB41BE20076B361 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2ACE2CB41BE20076B361 /* RidesApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F19C2AED2CB41BE20076B361 /* VehicleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AEF2CB41BE20076B361 /* Components */,
+				F19C2AF22CB41BE20076B361 /* VehicleDetailView.swift */,
+			);
+			path = VehicleDetails;
+			sourceTree = "<group>";
+		};
+		F19C2AEE2CB41BE20076B361 /* VehicleList */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AF42CB41BE20076B361 /* Components */,
+				F19C2AF92CB41BE20076B361 /* VehicleListView.swift */,
+			);
+			path = VehicleList;
+			sourceTree = "<group>";
+		};
+		F19C2AEF2CB41BE20076B361 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AF02CB41BE20076B361 /* InfoRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F19C2AF42CB41BE20076B361 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AF52CB41BE20076B361 /* ListRowView.swift */,
+				F19C2AF72CB41BE20076B361 /* PlaceholderView.swift */,
+				F19C2AFB2CB41BE20076B361 /* ValidatedTextFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F19C2AFD2CB41BE20076B361 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AFE2CB41BE20076B361 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F19C2AFE2CB41BE20076B361 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2AFF2CB41BE20076B361 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F19C2B082CB41BE20076B361 /* RidesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2B102CB41BE20076B361 /* VehicleFeatureTests */,
+			);
+			path = RidesTests;
+			sourceTree = "<group>";
+		};
+		F19C2B102CB41BE20076B361 /* VehicleFeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				F19C2B092CB41BE20076B361 /* VehicleViewModelTests.swift */,
+			);
+			path = VehicleFeatureTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +265,24 @@
 			productReference = F19C2ACB2CB41BE20076B361 /* Rides.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F19C2B062CB41BE20076B361 /* RidesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19C2B0D2CB41BE20076B361 /* Build configuration list for PBXNativeTarget "RidesTests" */;
+			buildPhases = (
+				F19C2B032CB41BE20076B361 /* Sources */,
+				F19C2B042CB41BE20076B361 /* Frameworks */,
+				F19C2B052CB41BE20076B361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F19C2B0C2CB41BE20076B361 /* PBXTargetDependency */,
+			);
+			name = RidesTests;
+			productName = RidesTests;
+			productReference = F19C2B072CB41BE20076B361 /* RidesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +295,10 @@
 				TargetAttributes = {
 					F19C2ACA2CB41BE20076B361 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					F19C2B062CB41BE20076B361 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F19C2ACA2CB41BE20076B361;
 					};
 				};
 			};
@@ -116,6 +316,7 @@
 			projectRoot = "";
 			targets = (
 				F19C2ACA2CB41BE20076B361 /* Rides */,
+				F19C2B062CB41BE20076B361 /* RidesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +331,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F19C2B052CB41BE20076B361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +345,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19C2AD12CB41BE20076B361 /* ContentView.swift in Sources */,
+				F19C2AF32CB41BE20076B361 /* VehicleDetailView.swift in Sources */,
+				F19C2AE52CB41BE20076B361 /* Vehicle.swift in Sources */,
+				F19C2B022CB41BE20076B361 /* VehicleDetailViewModel.swift in Sources */,
+				F19C2AFA2CB41BE20076B361 /* VehicleListView.swift in Sources */,
+				F19C2AF12CB41BE20076B361 /* InfoRowView.swift in Sources */,
+				F19C2ADE2CB41BE20076B361 /* APIService.swift in Sources */,
+				F19C2AE32CB41BE20076B361 /* VehicleSortOption.swift in Sources */,
+				F19C2AE92CB41BE20076B361 /* VehicleListViewModel.swift in Sources */,
+				F19C2AE12CB41BE20076B361 /* Vehicle+Mock.swift in Sources */,
 				F19C2ACF2CB41BE20076B361 /* RidesApp.swift in Sources */,
+				F19C2AFC2CB41BE20076B361 /* ValidatedTextFieldView.swift in Sources */,
+				F19C2AF82CB41BE20076B361 /* PlaceholderView.swift in Sources */,
+				F19C2B002CB41BE20076B361 /* View+Ext.swift in Sources */,
+				F19C2AF62CB41BE20076B361 /* ListRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19C2B032CB41BE20076B361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19C2B0A2CB41BE20076B361 /* VehicleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F19C2B0C2CB41BE20076B361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19C2ACA2CB41BE20076B361 /* Rides */;
+			targetProxy = F19C2B0B2CB41BE20076B361 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F19C2AD72CB41BE20076B361 /* Debug */ = {
@@ -317,6 +553,42 @@
 			};
 			name = Release;
 		};
+		F19C2B0E2CB41BE20076B361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sameliuk.yurii.RidesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rides.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rides";
+			};
+			name = Debug;
+		};
+		F19C2B0F2CB41BE20076B361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sameliuk.yurii.RidesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rides.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rides";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +606,15 @@
 			buildConfigurations = (
 				F19C2ADA2CB41BE20076B361 /* Debug */,
 				F19C2ADB2CB41BE20076B361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19C2B0D2CB41BE20076B361 /* Build configuration list for PBXNativeTarget "RidesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19C2B0E2CB41BE20076B361 /* Debug */,
+				F19C2B0F2CB41BE20076B361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

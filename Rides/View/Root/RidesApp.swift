@@ -4,7 +4,7 @@ import SwiftUI
 struct RidesApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      VehicleListView()
     }
   }
 }
