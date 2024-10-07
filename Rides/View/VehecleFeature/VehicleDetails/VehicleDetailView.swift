@@ -1,34 +1,58 @@
 import SwiftUI
 
 struct VehicleDetailView: View {
-  let vehicle: Vehicle
-  
+  private let vehicle: Vehicle
+  @StateObject private var viewModel: VehicleDetailViewModel
+
+  init(vehicle: Vehicle) {
+    self.vehicle = vehicle
+    _viewModel = StateObject(wrappedValue: VehicleDetailViewModel(vehicle: vehicle))
+  }
+
   var body: some View {
     ZStack {
       Color.gray.opacity(0.1).ignoresSafeArea()
-      
-      VStack(alignment: .leading, spacing: 10) {
-        InfoRowView(title: "VIN:", descriptions: vehicle.vin)
-        
-        Divider()
-        
-        InfoRowView(title: "Make and Model:", descriptions: vehicle.makeAndModel)
-        
-        Divider()
-        
-        InfoRowView(title: "Color:", descriptions: vehicle.color)
-        
-        Divider()
-        
-        InfoRowView(title: "Type:", descriptions: vehicle.carType)
+
+      TabView {
+        VStack(alignment: .leading, spacing: 10) {
+          InfoRowView(title: "VIN:", descriptions: vehicle.vin)
+
+          Divider()
+
+          InfoRowView(title: "Make and Model:", descriptions: vehicle.makeAndModel)
+
+          Divider()
+
+          InfoRowView(title: "Color:", descriptions: vehicle.color)
+
+          Divider()
+
+          InfoRowView(title: "Type:", descriptions: vehicle.carType)
+        }
+        .cardStyle()
+        .tabItem {
+          Text("Details")
+        }
+
+        VStack(alignment: .leading, spacing: 10) {
+          InfoRowView(
+            title: "Kilometrage:",
+            descriptions: "\(vehicle.kilometrage) km"
+          )
+
+          Divider()
+
+          InfoRowView(
+            title: "Estimated Emissions:",
+            descriptions: "\(viewModel.calculateEmissions(for: vehicle.kilometrage)) units"
+          )
+        }
+        .cardStyle()
+        .tabItem {
+          Text("Emissions")
+        }
       }
-      .padding(20)
-      .frame(height: 270)
-      .frame(maxWidth: .infinity)
-      .background(Color.white)
-      .cornerRadius(20)
-      .shadow(radius: 10)
-      .padding(.horizontal, 16)
+      .tabViewStyle(.page)
     }
     .navigationTitle("Vehicle Details")
     .navigationBarTitleDisplayMode(.inline)

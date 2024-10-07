@@ -5,6 +5,7 @@ class VehicleListViewModel: ObservableObject {
   @Published var inputCount: String = ""
   @Published var vehicles: [Vehicle] = []
   @Published var sortOption: VehicleSortOption = .vin
+  @Published var errorMessage: String?
 
   private var apiService: APIServiceProtocol
 
@@ -27,7 +28,7 @@ class VehicleListViewModel: ObservableObject {
   }
 
   func fetchVehicles() async {
-    guard let count = Int(inputCount) else { return }
+    guard let count = Int(inputCount), validateCount(inputCount) else { return }
     // add loader logic here if needed
     do {
       let vehicles = try await apiService.fetchVehicles(count: count)
@@ -35,5 +36,14 @@ class VehicleListViewModel: ObservableObject {
     } catch {
       // Error handling can be implemented here to handle cases where fetching data fails.
     }
+  }
+
+  func validateCount(_ countText: String) -> Bool {
+    guard let count = Int(countText), count >= 1 && count <= 100 else {
+      errorMessage = "Please enter a number between 1 and 100."
+      return false
+    }
+    errorMessage = nil
+    return true
   }
 }

@@ -1,16 +1,19 @@
 import SwiftUI
 
 struct VehicleListView: View {
+  @State private var isValidInput: Bool = true
   @StateObject private var viewModel = VehicleListViewModel()
 
   var body: some View {
     NavigationStack {
       VStack(spacing: 20) {
-        TextField("Enter number of vehicles", text: $viewModel.inputCount)
-          .textFieldStyle(RoundedBorderTextFieldStyle())
-          .keyboardType(.numberPad)
-          .padding(.horizontal, 16)
-          .padding(.top, 20)
+        ValidatedTextFieldView(
+          inputText: $viewModel.inputCount,
+          isValidInput: $isValidInput,
+          placeholder: "Enter number of vehicles",
+          errorMessage: viewModel.errorMessage,
+          validation: viewModel.validateCount
+        )
 
         Button("Fetch Vehicles") {
           Task {
